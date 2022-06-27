@@ -1,0 +1,17 @@
+<script>
+    //Problema
+    // latasTinta - Recebe quantos metros quadrados precisa 
+    // pintar, e retorna a quantidade de latas de tinta para 
+    // comprar.A cobertura da tinta é de 3 metros por litro de 
+    // tinta.Cada lata possui 18 litros de tinta.
+
+    //Entrada
+    const metrosParaPintar = Number(prompt("Digite quantos metros serão pintados:"))
+
+    //Processamento
+    const litrosDeTinta = metrosParaPintar / 3
+    const latasDeTinta = Math.ceil(litrosDeTinta / 18)
+
+    //Saída
+    document.write(`Serão necessárias ${latasDeTinta} latas de tinta`)
+</script>

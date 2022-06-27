@@ -1,0 +1,23 @@
+<script>
+    //Problema
+    // salarioLiquido - Recebe quanto ganha por hora e quantas 
+    // horas trabalho ao mês, e retorna o salário líquido.
+    // Descontos:
+    // - INSS é 8 % do salário bruto
+    // - IR é 11 % do salário bruto
+    // - Sindicato é 5 % do salário bruto.
+
+    //Entrada
+    const ganhosPorHora = Number(prompt("Digite o ganho por hora:"))
+    const horasTrabalhadas = Number(prompt("Digite o total de horas trabalhadas"))
+
+    //Processamento
+    const salarioBruto = ganhosPorHora * horasTrabalhadas
+    const valorINSS = salarioBruto * (8 / 100)
+    const valorIR = salarioBruto * (11 / 100)
+    const valorSindicato = salarioBruto * (5 / 100)
+    const salarioLiquido = salarioBruto - valorINSS - valorIR - valorSindicato
+
+    //Saída
+    document.write(`O salário líquido foi de R$ ${salarioLiquido.toFixed(2)}`)
+</script>
